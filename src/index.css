@@ -1,5 +1,16 @@
-@import-normalize; /* bring in normalize.css styles */
+/* @import-normalize; bring in normalize.css styles */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+input[type='text'] {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +18,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ef6fc2;
+  background: -webkit-linear-gradient(to right, #9ff0ed, #ef6fc2);
+  background: linear-gradient(to right, #9ff0ed, #ef6fc2);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  line-height: 25px;
+}
+
+.notActive {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.notActive:hover {
+  color: white;
+}
+
+.active {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
 }
