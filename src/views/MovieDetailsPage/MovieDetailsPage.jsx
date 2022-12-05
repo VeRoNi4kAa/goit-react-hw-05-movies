@@ -1,4 +1,4 @@
-import { fetchMovieId } from 'components/api/api';
+import { fetchMovieId } from 'api/api';
 import { useEffect, useState } from 'react';
 import { useParams, NavLink, Outlet, useLocation } from 'react-router-dom';
 import {
@@ -30,7 +30,6 @@ export default function MovieDetailsPage() {
           </div>
           <InfoImageBlock>
             <ImageBlock>
-              {' '}
               {movie.poster_path ? (
                 <img src={basePageUrl + movie.poster_path} alt="poster" />
               ) : (

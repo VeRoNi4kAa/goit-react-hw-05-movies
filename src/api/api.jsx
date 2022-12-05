@@ -7,25 +7,43 @@ axios.defaults.baseURL = 'https://api.themoviedb.org/3';
 
 export async function fetchTrendTitles() {
   const response = await axios
-    .get(`/trending/movie/week?${API_KEY}`)
+    .get(`/trending/movie/week`, {
+      params: {
+        api_key: 'abcc14051ec92b4ea953107c3446d1d4',
+      },
+    })
     .catch(error);
   return response.data.results;
 }
 
 export async function fetchMovieId(movieId) {
-  const response = await axios.get(`/movie/${movieId}?${API_KEY}`).catch(error);
+  const response = await axios
+    .get(`/movie/${movieId}`, {
+      params: {
+        api_key: 'abcc14051ec92b4ea953107c3446d1d4',
+      },
+    })
+    .catch(error);
   return response.data;
 }
 export async function fetchCast(movieId) {
   const response = await axios
-    .get(`/movie/${movieId}/credits?${API_KEY}`)
+    .get(`/movie/${movieId}/credits`, {
+      params: {
+        api_key: 'abcc14051ec92b4ea953107c3446d1d4',
+      },
+    })
     .catch(error);
   return response.data;
 }
 
 export async function fetchReviews(movieId) {
   const response = await axios
-    .get(`/movie/${movieId}/reviews?${API_KEY}`)
+    .get(`/movie/${movieId}/reviews`, {
+      params: {
+        api_key: 'abcc14051ec92b4ea953107c3446d1d4',
+      },
+    })
     .catch(error);
   return response.data.results;
 }

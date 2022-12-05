@@ -1,4 +1,4 @@
-import { fetchCast } from 'components/api/api';
+import { fetchCast } from 'api/api';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { List, Img, Item } from './Cast.styled';

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { fetchTrendTitles } from 'components/api/api';
+import { fetchTrendTitles } from 'api/api';
 import { List, Item } from './HomeStyled';
 
 export default function Home() {
