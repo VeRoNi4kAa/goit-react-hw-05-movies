@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { Main } from 'components/AppStyled';
-import Header from './Header';
+import { Main } from 'components/App/AppStyled';
+import Header from '../Header';
 import { createAsyncView } from 'components/helpers/createAsyncView';
 import { Suspense } from 'react';
 
