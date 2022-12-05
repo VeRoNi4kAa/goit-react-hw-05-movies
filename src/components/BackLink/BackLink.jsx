@@ -4,10 +4,5 @@ import { Link } from 'components/BackLink/BackLinkStyled';
 
 export default function BackLink() {
   const location = useLocation();
-  return (
-    <Link to={location?.state?.from ?? '/'}>
-      {/* <FaArrowLeft /> */}
-      Go back
-    </Link>
-  );
+  return <Link to={location?.state?.from ?? '/'}>Go back</Link>;
 }

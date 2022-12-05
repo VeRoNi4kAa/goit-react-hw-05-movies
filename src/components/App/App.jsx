@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Main } from 'components/App/AppStyled';
 import Header from '../Header';
-import { createAsyncView } from 'components/helpers/createAsyncView';
+import { createAsyncView } from 'helpers/createAsyncView';
 import { Suspense } from 'react';
 
 const Home = createAsyncView('Home');
